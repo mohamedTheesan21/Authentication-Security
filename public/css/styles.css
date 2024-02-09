@@ -31,6 +31,7 @@ body {
     /* Centers the image horizontally and vertically */
 }
 
+/* register */
 .backgroundRegister{
     background-image: url("../images/register.jpg");
     background-size: cover;
@@ -41,4 +42,13 @@ body {
     /* Fixes the background image, so it doesn't scroll with the content */
     background-position: center center;
     /* Centers the image horizontally and vertically */
+}
+
+/* secrets */
+.secret-text{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
 }
