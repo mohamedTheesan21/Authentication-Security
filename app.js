@@ -11,16 +11,17 @@ app.set('view engine', 'ejs');
 
 // dbConnct();
 
+app.get("/", (req, res) => {
+    res.render("home");
+});
 
 app.get("/:page", (req, res) => {
-    if(req.params.page === ""){
-        res.render("home");
-    }else if(req.params.page === "register"){
+    if(req.params.page === "register"){
         res.render("register");
     }else if(req.params.page === "login"){
-        res.render("clogin");
+        res.render("login");
     }
-})
+});
 
 
 
