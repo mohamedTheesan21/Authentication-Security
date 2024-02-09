@@ -5,10 +5,22 @@ const dbConnct = require('./dbConnect');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-dbConnct();
+// dbConnct();
+
+
+app.get("/:page", (req, res) => {
+    if(req.params.page === ""){
+        res.render("home");
+    }else if(req.params.page === "register"){
+        res.render("register");
+    }else if(req.params.page === "login"){
+        res.render("clogin");
+    }
+})
 
 
 
