@@ -1,10 +1,10 @@
-.centerd {
-  text-align: center;
-  padding-top: 200px;
-}
-
 body {
   background-color: #f4f4f4;
+}
+
+.centerd{
+  text-align: center;
+  margin-top: 200px;
 }
 
 /* login */
@@ -12,11 +12,13 @@ body {
 .box {
   padding-bottom: 30px;
   padding-top: 30px;
-  width: 30%;
+  width: 40%;
   margin-top: 200px;
+  margin-right: 5px;
   background-color:rgba(255, 255, 255, 0.3) ;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 1px #000;
+  margin: auto;
 }
 
 .backgroundLogin {
@@ -42,6 +44,33 @@ body {
     /* Fixes the background image, so it doesn't scroll with the content */
     background-position: center center;
     /* Centers the image horizontally and vertically */
+}
+
+.container{
+  margin-top: 200px;;
+}
+
+.social-btn{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-left: 5px;
+  padding: 0;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  
+}
+
+.cards{
+  margin-top: 200px;
+  background-color:rgba(255, 255, 255, 0.3) ;
+  border-radius: 10px;
+  width: 40%;
+  margin: auto;
+}
+
+.btn-social{
+  width: 80%;
 }
 
 /* secrets */
