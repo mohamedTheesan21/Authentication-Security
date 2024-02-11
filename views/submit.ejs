@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+<body>
+<div class="jumbotron centerd">
+    <div class="container">
+        <i class="fa-solid fa-key fa-6x"></i>
+        <h1 class="display-3">Secrets</h1>
+        <p class="lead">This is a simple website that allows you to submit your secrets anonymously.</p>
+        
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <input type="text" class="form-control" name="secret" required placeholder="Enter your secret here">
+            </div>
+            <button type="submit" class="btn btn-dark mt-3 col-md-6 col-sm-12">Submit</button>
+        </form>
+    </div>
+</div>
+
+<%- include('partials/footer') -%>
